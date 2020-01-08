@@ -8,8 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C179007F23C596E500D99980 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C179007E23C596E500D99980 /* AppDelegate.swift */; };
-		C179008123C596E500D99980 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C179008023C596E500D99980 /* SceneDelegate.swift */; };
-		C179008323C596E500D99980 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C179008223C596E500D99980 /* ViewController.swift */; };
+		C179008323C596E500D99980 /* LSCategoryContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C179008223C596E500D99980 /* LSCategoryContainerViewController.swift */; };
 		C179008623C596E500D99980 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C179008423C596E500D99980 /* Main.storyboard */; };
 		C179008823C596E700D99980 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C179008723C596E700D99980 /* Assets.xcassets */; };
 		C179008B23C596E700D99980 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C179008923C596E700D99980 /* LaunchScreen.storyboard */; };
@@ -18,8 +17,7 @@
 /* Begin PBXFileReference section */
 		C179007B23C596E500D99980 /* GanHuo-MVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GanHuo-MVC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C179007E23C596E500D99980 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C179008023C596E500D99980 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C179008223C596E500D99980 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C179008223C596E500D99980 /* LSCategoryContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSCategoryContainerViewController.swift; sourceTree = "<group>"; };
 		C179008523C596E500D99980 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C179008723C596E700D99980 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C179008A23C596E700D99980 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +54,54 @@
 		C179007D23C596E500D99980 /* GanHuo-MVC */ = {
 			isa = PBXGroup;
 			children = (
-				C179007E23C596E500D99980 /* AppDelegate.swift */,
-				C179008023C596E500D99980 /* SceneDelegate.swift */,
-				C179008223C596E500D99980 /* ViewController.swift */,
-				C179008423C596E500D99980 /* Main.storyboard */,
-				C179008723C596E700D99980 /* Assets.xcassets */,
-				C179008923C596E700D99980 /* LaunchScreen.storyboard */,
-				C179008C23C596E700D99980 /* Info.plist */,
+				C17900D423C5B31800D99980 /* AppDelegate */,
+				C17900D223C5B30500D99980 /* Controllers */,
+				C17900D323C5B30E00D99980 /* Views */,
+				C17900D523C5B32100D99980 /* Models */,
+				C17900D623C5B32D00D99980 /* Resources */,
 			);
 			path = "GanHuo-MVC";
+			sourceTree = "<group>";
+		};
+		C17900D223C5B30500D99980 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C179008223C596E500D99980 /* LSCategoryContainerViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C17900D323C5B30E00D99980 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C179008423C596E500D99980 /* Main.storyboard */,
+				C179008923C596E700D99980 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C17900D423C5B31800D99980 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				C179007E23C596E500D99980 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		C17900D523C5B32100D99980 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C17900D623C5B32D00D99980 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C179008723C596E700D99980 /* Assets.xcassets */,
+				C179008C23C596E700D99980 /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,6 +130,7 @@
 		C179007323C596E500D99980 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = LS;
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = gaoyongxiao;
@@ -138,9 +176,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C179008323C596E500D99980 /* ViewController.swift in Sources */,
+				C179008323C596E500D99980 /* LSCategoryContainerViewController.swift in Sources */,
 				C179007F23C596E500D99980 /* AppDelegate.swift in Sources */,
-				C179008123C596E500D99980 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +323,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L225J6UWE9;
-				INFOPLIST_FILE = "GanHuo-MVC/Info.plist";
+				INFOPLIST_FILE = "GanHuo-MVC/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +342,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L225J6UWE9;
-				INFOPLIST_FILE = "GanHuo-MVC/Info.plist";
+				INFOPLIST_FILE = "GanHuo-MVC/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

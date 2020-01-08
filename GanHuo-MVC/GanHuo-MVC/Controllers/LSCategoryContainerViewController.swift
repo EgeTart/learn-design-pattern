@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  LSCategoryContainerViewController.swift
 //  GanHuo-MVC
 //
 //  Created by gaoyongxiao on 2020/1/8.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LSCategoryContainerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
